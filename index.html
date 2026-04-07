@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Escamilla | Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer especializado en React, Node.js y sistemas multi-agente con IA. Creando soluciones innovadoras.">
+  <meta name="author" content="Christian Escamilla">
+  <meta name="keywords" content="developer, full stack, react, node.js, python, AI, chatbot, multi-agent">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>CE<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      <div class="nav-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para trabajar
+      </div>
+      <h1 class="hero-title">
+        Hola, soy <span class="highlight">Christian Escamilla</span>
+      </h1>
+      <h2 class="hero-subtitle">
+        <span class="typewriter" id="typewriter"></span>
+      </h2>
+      <p class="hero-description">
+        Full Stack Developer especializado en crear experiencias digitales 
+        innovadoras. Passionate por la IA, sistemas multi-agente y soluciones 
+        tecnológicas que impactan.
+      </p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          </svg>
+          Ver Proyectos
+        </a>
+        <a href="#contacto" class="btn btn-outline">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Contactar
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/christianescamilla15-cell" target="_blank" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/christianescamilla" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="mailto:christian.escamilla@email.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="window-header">
+          <div class="window-dot red"></div>
+          <div class="window-dot yellow"></div>
+          <div class="window-dot green"></div>
+          <span class="window-title">christian.js</span>
+        </div>
+        <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> <span class="operator">=</span> {
+  <span class="property">nombre</span>: <span class="string">"Christian Escamilla"</span>,
+  <span class="property">rol</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">experiencia</span>: <span class="number">5</span>,
+  <span class="property">stack</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"Python"</span>],
+  <span class="property">pasiones</span>: [
+    <span class="string">"IA & Machine Learning"</span>,
+    <span class="string">"Sistemas Multi-Agente"</span>,
+    <span class="string">"Chatbots Inteligentes"</span>
+  ],
+  <span class="method">crearSoluciones</span>: <span class="function">() =></span> <span class="string">"innovación"</span>
+};</code></pre>
+      </div>
+    </div>
+  </header>
+
+  <section class="about" id="sobre-mi">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Sobre Mí</span>
+        <h2 class="section-title">Convierto ideas en experiencias digitales</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Soy un desarrollador Full Stack con más de 5 años de experiencia 
+            construyendo aplicaciones web modernas. Me especializo en el 
+            ecosistema JavaScript/TypeScript, con particular interés en 
+            <strong>inteligencia artificial</strong> y <strong>sistemas multi-agente</strong>.
+          </p>
+          <p>
+            Mi enfoque combina la rigurosidad técnica con la creatividad 
+            necesaria para resolver problemas complejos. He liderado proyectos 
+            que integran chatbots con IA, sistemas de automatización y 
+            plataformas de gestión empresarial.
+          </p>
+          <p>
+            Atualmente, estoy enfocado en construir sistemas multi-agente 
+            que revolucionen la atención al cliente y la automatización 
+            de procesos empresariales.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Proyectos completados</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Tecnologías dominadas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Sistemas multi-agente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Tecnologías que domino</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>React / Next.js</li>
+            <li><span class="skill-dot"></span>Vue.js / Nuxt</li>
+            <li><span class="skill-dot"></span>TypeScript</li>
+            <li><span class="skill-dot"></span>HTML5 / CSS3 / SASS</li>
+            <li><span class="skill-dot"></span>Tailwind CSS</li>
+            <li><span class="skill-dot"></span>React Native</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">Backend</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Node.js / Express</li>
+            <li><span class="skill-dot"></span>Python / FastAPI</li>
+            <li><span class="skill-dot"></span>PostgreSQL</li>
+            <li><span class="skill-dot"></span>MongoDB</li>
+            <li><span class="skill-dot"></span>Redis</li>
+            <li><span class="skill-dot"></span>GraphQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path>
+              <path d="M12 14v8"></path>
+              <path d="M8 22h8"></path>
+              <circle cx="12" cy="6" r="1"></circle>
+            </svg>
+          </div>
+          <h3 class="skill-title">AI & Bots</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Claude API / Anthropic</li>
+            <li><span class="skill-dot"></span>OpenAI GPT</li>
+            <li><span class="skill-dot"></span>WhatsApp Bots</li>
+            <li><span class="skill-dot"></span>LangChain</li>
+            <li><span class="skill-dot"></span>NLP / Intent Classification</li>
+            <li><span class="skill-dot"></span>Sistemas Multi-Agente</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">DevOps & Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>Docker / Kubernetes</li>
+            <li><span class="skill-dot"></span>Git / GitHub Actions</li>
+            <li><span class="skill-dot"></span>Vercel / Render</li>
+            <li><span class="skill-dot"></span>AWS / GCP</li>
+            <li><span class="skill-dot"></span>Cypress / Vitest</li>
+            <li><span class="skill-dot"></span>CI/CD Pipelines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="proyectos">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Proyectos</span>
+        <h2 class="section-title">Proyectos destacados</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-image">
+            <div class="project-badge">⭐ Destacado</div>
+            <img src="img/horizonte-creativo.png" alt="Horizonte Creativo" onerror="this.parentElement.innerHTML='<div class=\'project-placeholder\'><span>🎨</span></div>'">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Horizonte Creativo</h3>
+            <p class="project-description">
+              Landing page profesional para estudio de diseño con sistema 
+              multi-agente integrado. Incluye Dark Mode, animaciones CSS, 
+              y suite completa de tests E2E con Cypress.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Cypress</span>
+              <span class="tech-tag">Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://horizonte-creativo.vercel.app" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/christianescamilla15-cell/horizonte-creativo" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="img/synapse-chatbot.png" alt="Synapse Chatbot" onerror="this.parentElement.innerHTML='<div class=\'project-placeholder\'><span>🤖</span></div>'">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Synapse - Chatbot Multiagente</h3>
+            <p class="project-description">
+              Chatbot inteligente con 5 agentes IA especializados que 
+              clasifican intents y enrutan conversaciones automáticamente.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Claude API</span>
+              <span class="tech-tag">WhatsApp</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chatbot-multiagente-ia.vercel.app" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Demo
+              </a>
+              <a href="https://github.com/christianescamilla15-cell/chatbot-multiagente-ia" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="img/nexusforge.png" alt="NexusForge AI" onerror="this.parentElement.innerHTML='<div class=\'project-placeholder\'><span>⚡</span></div>'">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">NexusForge AI</h3>
+            <p class="project-description">
+              Plataforma de desarrollo con agentes IA que asisten en 
+              la creación de código, documentación y testing automatizado.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/christianescamilla15-cell/nexusforge-ai" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="img/finance-ai.png" alt="Finance AI" onerror="this.parentElement.innerHTML='<div class=\'project-placeholder\'><span>💰</span></div>'">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Finance AI</h3>
+            <p class="project-description">
+              Dashboard de análisis financiero con IA para predicción 
+              de tendencias y gestión de inversiones.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/christianescamilla15-cell/finance-ai" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="img/hr-scout.png" alt="HR Scout" onerror="this.parentElement.innerHTML='<div class=\'project-placeholder\'><span>👥</span></div>'">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">HR Scout</h3>
+            <p class="project-description">
+              Sistema ATS con IA para reclutamiento inteligente, 
+              análisis de CVs y matching de candidatos.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">OpenAI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/christianescamilla15-cell/hr-scout" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="img/content-studio.png" alt="Content Studio" onerror="this.parentElement.innerHTML='<div class=\'project-placeholder\'><span>📝</span></div>'">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Content Studio</h3>
+            <p class="project-description">
+              Plataforma de creación de contenido con IA para 
+              generación de textos, imágenes y scheduling en redes.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">DALL-E</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/christianescamilla15-cell/content-studio" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p class="contact-text">
+            Estoy siempre abierto a nuevas oportunidades, colaboraciones 
+            y proyectos interesantes. No dudes en contactarme.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:christian.escamilla@email.com" class="contact-link">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">christian.escamilla@email.com</span>
+              </div>
+            </a>
+            <a href="https://github.com/christianescamilla15-cell" target="_blank" class="contact-link">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">@christianescamilla15-cell</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>CE<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+      </div>
+      <p class="footer-text">
+        Diseñado y desarrollado con <span class="heart">❤️</span> por Christian Escamilla
+      </p>
+      <p class="footer-copyright">
+        © 2026 Christian Escamilla. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
