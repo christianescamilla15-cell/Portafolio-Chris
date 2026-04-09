@@ -1,1 +1,10 @@
-.vercel
+node_modules/
+dist/
+.env
+.env.local
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+package-lock.json
+.claude/

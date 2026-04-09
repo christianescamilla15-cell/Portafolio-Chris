@@ -1,0 +1,41 @@
+name: CI — 06 CV Optimizer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'proyectos/06-cv-optimizer/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'proyectos/06-cv-optimizer/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyectos/06-cv-optimizer
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: proyectos/06-cv-optimizer/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build

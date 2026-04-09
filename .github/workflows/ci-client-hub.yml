@@ -1,0 +1,42 @@
+name: CI — 05 Client Hub
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'proyectos/05-client-hub/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'proyectos/05-client-hub/**'
+
+defaults:
+  run:
+    working-directory: proyectos/05-client-hub
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: proyectos/05-client-hub/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
